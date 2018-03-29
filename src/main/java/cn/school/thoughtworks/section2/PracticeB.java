@@ -14,7 +14,7 @@ public class PracticeB {
                 value = Integer.parseInt(str.substring(str.indexOf("-") + 1));
                 key = str.substring(0, str.indexOf("-"));
             }
-            if (!result.containsKey(str)) {
+            if (!result.containsKey(key)) {
                 result.put(key, value);
             } else {
                 result.put(key, result.get(key) + value);
